@@ -2,7 +2,7 @@
 
 ## Overview
 This repository is dedicated to supporting CS 212: Object-Oriented Data Structures at Loyola University Maryland. It contains Java code examples, exercises, and supplemental materials that correspond to the major topics covered throughout the course.
-
+- Class book -> [Here we go](https://runestone.academy/ns/books/published/javajavajava/designinga-riddle-program.html)
 ## Major Topics
 The repository is organized by the major topics of the course as follows:
 - **Introduction to Java**
