@@ -1,4 +1,4 @@
-package lecture_note_4_5.dice;
+package lecture_note_4_5.zee_dice;
 
 import java.util.Objects;
 
