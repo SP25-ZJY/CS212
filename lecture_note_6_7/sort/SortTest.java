@@ -21,9 +21,7 @@ public class SortTest {
         Student[] students = {
                 new Student("Alice", new int[]{85, 90, 78, 92, 88}),
                 new Student("Bob", new int[]{70, 75, 80, 85, 90}),
-                new Student("Charlie", new int[]{95, 94, 96, 92, 91}),
-                new Student("David", new int[]{60, 65, 70, 75, 80}),
-                new Student("Eve", new int[]{88, 87, 89, 90, 85})
+                new Student("Charlie", new int[]{95, 94, 96, 92, 91})
         };
 
         // Display students before sorting
