@@ -60,27 +60,31 @@ public class SortingUtils {
         }
     }
 
-    // Selection Sort for Student objects (Sorting by Score)
+    // Selection Sort for Students based on average grade
     public static void selectionSort(Student[] students) {
-        for (int i = 0; i < students.length - 1; i++) {
+        int n = students.length;
+        for (int i = 0; i < n - 1; i++) {
             int minIndex = i;
-            for (int j = i + 1; j < students.length; j++) {
+            for (int j = i + 1; j < n; j++) {
                 if (students[j].compareTo(students[minIndex]) < 0) {
-                    minIndex = j;
+                    minIndex = j; // Update index of minimum element
                 }
             }
-            // Swap
+            // Swap students[i] with the smallest found student
             Student temp = students[i];
             students[i] = students[minIndex];
             students[minIndex] = temp;
         }
     }
 
-    // Insertion Sort for Student objects (Sorting by Score)
+    // Insertion Sort for Students based on average grade
     public static void insertionSort(Student[] students) {
-        for (int i = 1; i < students.length; i++) {
+        int n = students.length;
+        for (int i = 1; i < n; i++) {
             Student key = students[i];
             int j = i - 1;
+
+            // Move elements that are greater than key one position ahead
             while (j >= 0 && students[j].compareTo(key) > 0) {
                 students[j + 1] = students[j];
                 j--;

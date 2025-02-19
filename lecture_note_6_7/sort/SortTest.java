@@ -17,20 +17,29 @@ public class SortTest {
         SortingUtils.selectionSort(names);
         System.out.println("After Sorting (Strings):  " + Arrays.toString(names) + "\n");
 
-        // 🔴 Sorting Students by Score
+        // Create Students
         Student[] students = {
-                new Student("Alice", 85),
-                new Student("Bob", 78),
-                new Student("Charlie", 92),
-                new Student("David", 90)
+                new Student("Alice", new int[]{85, 90, 78, 92, 88}),
+                new Student("Bob", new int[]{70, 75, 80, 85, 90}),
+                new Student("Charlie", new int[]{95, 94, 96, 92, 91}),
+                new Student("David", new int[]{60, 65, 70, 75, 80}),
+                new Student("Eve", new int[]{88, 87, 89, 90, 85})
         };
 
-        System.out.println("Before Sorting (Students by Score):");
-        for (Student s : students) System.out.println(s);
+        // Display students before sorting
+        System.out.println("Before Sorting:");
+        for (Student s : students) {
+            System.out.println(s);
+        }
 
+        // Sort students by average grade
         SortingUtils.selectionSort(students);
+        // SortUtils.insertionSort(students); // Use this for insertion sort
 
-        System.out.println("\nAfter Sorting (Students by Score):");
-        for (Student s : students) System.out.println(s);
+        // Display students after sorting
+        System.out.println("\nAfter Sorting:");
+        for (Student s : students) {
+            System.out.println(s);
+        }
     }
 }
