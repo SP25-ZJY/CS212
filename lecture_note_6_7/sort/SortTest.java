@@ -12,7 +12,7 @@ public class SortTest {
         System.out.println("After Sorting (Integers):  " + Arrays.toString(numbers) + "\n");
 
         // 🟡 Sorting Strings
-        String[] names = {"Charlie", "Alice", "Bob", "David"};
+        String[] names = {"Charlie", "Alice", "Bob"};
         System.out.println("Before Sorting (Strings): " + Arrays.toString(names));
         SortingUtils.selectionSort(names);
         System.out.println("After Sorting (Strings):  " + Arrays.toString(names) + "\n");

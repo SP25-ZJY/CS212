@@ -15,6 +15,8 @@ public class PointTest {
         p.move(2,5);
         System.out.println("Distance p-q: " + Point.distance(p, q));
         p.move(2,-15);
-        System.out.println(p.isFirstQuadrant());
+
+        if (p.isFirstQuadrant())
+            System.out.println("p: is in quadrant 1");
     }
 }
