@@ -24,6 +24,7 @@ public class SortTest {
                 new Student("Charlie", new int[]{95, 94, 96, 92, 91})
         };
 
+
         // Display students before sorting
         System.out.println("Before Sorting:");
         for (Student s : students) {
@@ -32,7 +33,7 @@ public class SortTest {
 
         // Sort students by average grade
         SortingUtils.selectionSort(students);
-        // SortUtils.insertionSort(students); // Use this for insertion sort
+        // SortUtils.insertionSort(students); // Use this for insertion lecture_note_6_7.sort
 
         // Display students after sorting
         System.out.println("\nAfter Sorting:");

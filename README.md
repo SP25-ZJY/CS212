@@ -26,7 +26,7 @@ The repository is organized by the major topics of the course as follows:
 - **Recursion**
     - Recursive programming examples, including simple and complex use cases.
 - **Merge Sort**
-    - Detailed implementation of the merge sort algorithm.
+    - Detailed implementation of the merge lecture_note_6_7.sort algorithm.
 - **Linked Lists, Queues, and Stacks**
     - Implementations of these data structures using Java.
 - **Binary Trees and Binary Search Trees**
