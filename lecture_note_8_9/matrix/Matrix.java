@@ -36,7 +36,7 @@ public class Matrix {
      */
     private void add(int[][] other) {
         if (this.data.length != other.length || this.data[0].length != other[0].length) {
-            throw new IllegalArgumentException("Matrices must have the same dimensions for addition.");
+            return;
         }
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
@@ -67,13 +67,13 @@ public class Matrix {
      */
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
+        String result = "";
         for (int[] row : data) {
             for (int value : row) {
-                sb.append(value).append(" ");
+                result += value + " ";
             }
-            sb.append("\n");
+            result += "\n";
         }
-        return sb.toString();
+        return result;
     }
 }
